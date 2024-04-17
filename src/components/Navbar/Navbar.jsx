@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -11,24 +12,56 @@ const Navbar = () => {
       </div>
       <div className='links'>
         <NavLink to={'./'}>
-          <div className="link">
+          <motion.div 
+            className="link"
+            initial={{
+              rotate: 0
+            }}
+            whileHover={{
+              rotate: -5
+            }}
+          >
             Home
-          </div>
+          </motion.div>
         </NavLink>
         <NavLink to={'./shop'}>
-          <div className="link">
+        <motion.div 
+            className="link"
+            initial={{
+              rotate: 0
+            }}
+            whileHover={{
+              rotate: -5
+            }}
+          >
             Shop
-          </div>
+          </motion.div>
         </NavLink>
         <NavLink to={'./about'}>
-          <div className="link">
+        <motion.div 
+            className="link"
+            initial={{
+              rotate: 0
+            }}
+            whileHover={{
+              rotate: -5
+            }}
+          >
             About
-          </div>
+          </motion.div>
         </NavLink>
         <NavLink to={'./contact'}>
-          <div className="link">
+        <motion.div 
+            className="link"
+            initial={{
+              rotate: 0
+            }}
+            whileHover={{
+              rotate: -5
+            }}
+          >
             Contact
-          </div>  
+          </motion.div> 
         </NavLink>
       </div>
       <div className='cart'>

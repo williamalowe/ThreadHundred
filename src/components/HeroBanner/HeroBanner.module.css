@@ -1,0 +1,39 @@
+.banner {
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.header {
+  padding: 1rem;
+}
+.header>h1 {
+  background: var(--background-color);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: skew(-20deg);
+}
+.header>h1:nth-child(even) {
+  transform: skew(20deg);
+  color: var(--highlight-color);
+
+}
+.banner>p {
+  width: 50%;
+  text-align: center;
+}
+.button>button {
+  width: 160px;
+  height: 40px;
+  border: 2px solid var(--highlight-color);
+  background: none;
+  color: var(--highlight-color);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
