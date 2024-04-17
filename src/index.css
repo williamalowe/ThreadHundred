@@ -3,8 +3,9 @@
 :root {
   --text-color: #1d1d1d;
   --background-color: #fff;
-  --highlight-color: #FFC94A;
-  --border-color: #ff917a;
+	--highlight-color: #ff917a;
+  /* --highlight-color: #ff657f;
+  --border-color: #56c5e9; */
 
 }
 

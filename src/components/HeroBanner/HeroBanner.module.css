@@ -1,0 +1,44 @@
+.banner {
+  width: 1180px;
+  height: 400px;
+  display: flex;
+}
+.image {
+  display: flex;
+  justify-content: right;
+}
+.image>img {
+  height: 400px;
+}
+.content {
+  padding: 1rem;
+  flex: 1;
+}
+.header {
+  cursor: pointer;
+  /* position: absolute; */
+}
+.header>h1 {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 800;
+  z-index: 30;
+}
+.header>h1:nth-child(2) {
+  color: var(--highlight-color);
+  z-index: 20;
+  transform: translate(2px, 2px); 
+  transition: transform 0.2s ease-in-out;
+}
+.header>h1:nth-child(3) {
+  color: var(--border-color);
+  z-index: 10;
+  transform: translate(4px, 4px); 
+  transition: transform 0.4s ease-in-out;
+}
+.header:hover>h1:nth-child(2) {
+    transform: translate(6px, 6px);
+}
+.header:hover>h1:nth-child(3) {
+    transform: translate(12px, 12px);
+}
