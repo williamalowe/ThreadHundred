@@ -3,6 +3,9 @@
 :root {
   --text-color: #1d1d1d;
   --background-color: #fff;
+  --highlight-color: #FFC94A;
+  --border-color: #ff917a;
+
 }
 
 html, body, div, span, applet, object, iframe,
