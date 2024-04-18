@@ -5,7 +5,8 @@
 .tag {
   position: absolute;
   top: 10%;
-  left: -10%;
+  left: 0%;
+  background: var(--background-color);
   border: 2px solid var(--highlight-color);
   color: var(--highlight-color);
   font-weight: 600;
