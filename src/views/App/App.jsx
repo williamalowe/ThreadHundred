@@ -16,12 +16,6 @@ const App = () => {
       <HeroBanner />
       <AdBanner />
       <Spotlight />
-      {/* <ProductCard 
-        tag={products[0].productTag}
-        image={products[0].productImg}
-        title={products[0].productName}
-        price={products[0].productPrice}
-      /> */}
     </main>
   )
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
         <img src="./logo.png" alt="tehundred logo" />
       </div>
       <div className='links'>
-        <NavLink to={'./'}>
+        <NavLink to={'/'}>
           <motion.div 
             className="link"
             initial={{
@@ -24,7 +24,7 @@ const Navbar = () => {
             Home
           </motion.div>
         </NavLink>
-        <NavLink to={'./shop'}>
+        <NavLink to={'/shop'}>
         <motion.div 
             className="link"
             initial={{
