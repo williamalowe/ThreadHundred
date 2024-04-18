@@ -42,13 +42,15 @@
   width: 120px;
   height: 40px;
   background: var(--highlight-color);
-  border-radius: 0.5rem;
   color: var(--background-color);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 a.active {
   transform: rotate(5deg);
+}
+a.active>div {
+  background: var(--text-color);
 }
 
