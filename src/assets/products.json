@@ -1,0 +1,32 @@
+{
+  "products" : [
+    {
+      "productID": 0,
+      "productName": "T Shirt Of The Month Subscription",
+      "productPrice": 25.00,
+      "productImg": "./products/product00.jpg",
+      "productTag": "Subscribe Now"
+    },
+    {
+      "productID": 1,
+      "productName": "Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt",
+      "productPrice": 55.50,
+      "productImg": "./products/product01.jpg",
+      "productTag": ""
+    },
+    {
+      "productID": 2,
+      "productName": "Goated - T Shirt",
+      "productPrice": 35.00,
+      "productImg": "./products/product02.jpg",
+      "productTag": ""
+    },
+    {
+      "productID": 3,
+      "productName": "Warrior Blossom - Pull-Over Hoodie",
+      "productPrice": 35.00,
+      "productImg": "./products/product03.jpg",
+      "productTag": "Back In Stock"
+    }
+  ]
+}
