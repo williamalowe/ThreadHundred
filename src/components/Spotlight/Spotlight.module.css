@@ -9,6 +9,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   text-align: center;
+  z-index: 120;
 }
 .content {
   display: flex;
