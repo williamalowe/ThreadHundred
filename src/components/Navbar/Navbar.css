@@ -11,28 +11,28 @@
   align-items: center;
   justify-content: center;
 }
-.logo>img {
+.logo > img {
   height: 100px;
 }
 .cart {
   display: flex;
   gap: 1rem;
 }
-.cart>div {
+.cart > div {
   position: relative;
   top: -12px;
   right: 12px;
-  display: grid; 
+  display: grid;
   place-items: center;
   height: 20px;
   width: 20px;
   background: var(--highlight-color);
   border-radius: 50%;
 }
-.cart>svg {
+.cart > svg {
   height: 20px;
 }
-.links>a {
+.links > a {
   text-decoration: none;
 }
 .link {
@@ -50,7 +50,6 @@
 a.active {
   transform: rotate(5deg);
 }
-a.active>div {
+a.active > div {
   background: var(--text-color);
 }
-

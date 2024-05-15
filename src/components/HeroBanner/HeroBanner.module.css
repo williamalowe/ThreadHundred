@@ -8,23 +8,22 @@
 .header {
   padding: 1rem;
 }
-.header>h1 {
+.header > h1 {
   background: var(--background-color);
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   transform: skew(-20deg);
 }
-.header>h1:nth-child(even) {
+.header > h1:nth-child(even) {
   transform: skew(20deg);
   color: var(--highlight-color);
-
 }
-.banner>p {
+.banner > p {
   width: 50%;
   text-align: center;
 }
-.button>button {
+.button > button {
   width: 160px;
   height: 40px;
   border: 2px solid var(--highlight-color);

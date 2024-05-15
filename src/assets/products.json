@@ -1,86 +1,86 @@
 {
-  "products" : [
+  "products": [
     {
       "productID": 0,
       "productName": "T Shirt Of The Month Subscription",
-      "productPrice": 25.00,
+      "productPrice": 25.0,
       "productImg": "./products/product00.jpg",
       "productTag": "Subscribe Now"
     },
     {
       "productID": 1,
       "productName": "Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt",
-      "productPrice": 55.50,
+      "productPrice": 55.5,
       "productImg": "./products/product01.jpg",
       "productTag": ""
     },
     {
       "productID": 2,
       "productName": "Goated - T Shirt",
-      "productPrice": 35.00,
+      "productPrice": 35.0,
       "productImg": "./products/product02.jpg",
       "productTag": ""
     },
     {
       "productID": 3,
       "productName": "Warrior Blossom - Pull-Over Hoodie",
-      "productPrice": 35.00,
+      "productPrice": 35.0,
       "productImg": "./products/product03.jpg",
       "productTag": "Back In Stock"
     },
     {
       "productID": 4,
       "productName": "Noodles - Black T Shirt",
-      "productPrice": 25.00,
+      "productPrice": 25.0,
       "productImg": "./products/product04.jpg",
       "productTag": "On Sale"
     },
     {
       "productID": 5,
       "productName": "89 Watchers - Yellow T Shirt",
-      "productPrice": 35.00,
+      "productPrice": 35.0,
       "productImg": "./products/product05.jpg",
       "productTag": ""
     },
     {
       "productID": 6,
       "productName": "Astro-Fox - Grey T Shirt",
-      "productPrice": 35.00,
+      "productPrice": 35.0,
       "productImg": "./products/product06.jpg",
       "productTag": "Low Stock"
     },
     {
       "productID": 7,
       "productName": "I'm Watching - Green T Shirt",
-      "productPrice": 30.00,
+      "productPrice": 30.0,
       "productImg": "./products/product07.jpg",
       "productTag": ""
     },
     {
       "productID": 8,
       "productName": "StatixBoy - Pink Sweater",
-      "productPrice": 55.00,
+      "productPrice": 55.0,
       "productImg": "./products/product08.jpg",
       "productTag": ""
     },
     {
       "productID": 9,
       "productName": "Thunder Clap - Black T Shirt",
-      "productPrice": 35.00,
+      "productPrice": 35.0,
       "productImg": "./products/product09.jpg",
       "productTag": ""
     },
     {
       "productID": 10,
       "productName": "Forgot - White T Shirt",
-      "productPrice": 25.00,
+      "productPrice": 25.0,
       "productImg": "./products/product10.jpg",
       "productTag": "On Sale"
     },
     {
       "productID": 11,
       "productName": "Color Blind - Blue T Shirt",
-      "productPrice": 40.00,
+      "productPrice": 40.0,
       "productImg": "./products/product11.jpg",
       "productTag": ""
     }

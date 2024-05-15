@@ -15,7 +15,7 @@
   transform: rotate(-45deg);
   z-index: 100;
 }
-.card>img {
+.card > img {
   width: 360px;
   z-index: 1;
 }
@@ -27,7 +27,7 @@
   text-align: center;
   z-index: 100;
 }
-.description>p {
+.description > p {
   font-size: 0.8rem;
   color: #6b6b6b;
 }

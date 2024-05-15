@@ -1,6 +1,6 @@
-import styles from './Shop.module.css';
-import Navbar from "../../components/Navbar/Navbar"
-import ProductList from '../../components/ProductList/ProductList';
+import styles from "./Shop.module.css";
+import Navbar from "../../components/Navbar/Navbar";
+import ProductList from "../../components/ProductList/ProductList";
 
 const Shop = () => {
   return (
@@ -8,7 +8,7 @@ const Shop = () => {
       <Navbar />
       <ProductList />
     </main>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;

@@ -5,7 +5,7 @@
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
-.left>img {
+.left > img {
   width: 400px;
 }
 .right {
@@ -16,13 +16,13 @@
   gap: 1rem;
   justify-content: center;
 }
-.right>h3 {
+.right > h3 {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
 }
-.right>p {
+.right > p {
   width: 50%;
 }
 .pricing {
@@ -30,7 +30,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-.pricing>button {
+.pricing > button {
   height: 32px;
   width: 200px;
   font-size: 1rem;

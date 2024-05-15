@@ -1,21 +1,20 @@
-import { RouterProvider, createBrowserRouter  } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "../../views/App/App";
 import Shop from "../../views/Shop/Shop";
-
 
 const Router = () => {
   const Router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <App />,
-      errorElement: <>error</>
+      errorElement: <>error</>,
     },
     {
-      path: '/shop',
+      path: "/shop",
       element: <Shop />,
     },
-  ])
-  return <RouterProvider router={Router} />
-}
+  ]);
+  return <RouterProvider router={Router} />;
+};
 
-export default Router
+export default Router;
