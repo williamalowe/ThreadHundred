@@ -13,7 +13,7 @@
 .slide > article > h3 {
   font-size: 1.2rem;
 }
-.field  {
+.field {
   display: flex;
 }
 .field > * {
