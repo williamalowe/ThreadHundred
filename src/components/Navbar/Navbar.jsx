@@ -7,9 +7,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
+      <a className="logo" href='/'>
         <img src="./logo.png" alt="tehundred logo" />
-      </div>
+      </a>
       <div className="links">
         <NavLink to={"/"}>
           <motion.div
@@ -37,7 +37,7 @@ const Navbar = () => {
             Shop
           </motion.div>
         </NavLink>
-        <NavLink to={"./about"}>
+        <NavLink to={"./cart"}>
           <motion.div
             className="link"
             initial={{
@@ -47,7 +47,7 @@ const Navbar = () => {
               rotate: -5,
             }}
           >
-            About
+            Cart
           </motion.div>
         </NavLink>
         <NavLink to={"./contact"}>
@@ -63,10 +63,6 @@ const Navbar = () => {
             Contact
           </motion.div>
         </NavLink>
-      </div>
-      <div className="cart">
-        <FontAwesomeIcon icon={faCartShopping} />
-        <div>0</div>
       </div>
     </nav>
   );
