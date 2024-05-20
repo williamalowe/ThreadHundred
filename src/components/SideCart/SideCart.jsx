@@ -4,6 +4,7 @@ import { faArrowRight, faTag } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import ProductSlide from '../ProductSlide/ProductSlide';
 
 const SideCart = () => {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -35,7 +36,7 @@ const SideCart = () => {
             borderTopLeftRadius: 0
           }}
           animate={{
-            width: '20vw',
+            width: '30vw',
             height: '100vh',
             borderBottomLeftRadius: '1rem',
             borderTopLeftRadius: '1rem'
@@ -57,7 +58,8 @@ const SideCart = () => {
           <div className={styles.list}>
               <h5> 0 Items in cart</h5>
               <div className={styles.items}>
-                
+                {/* to be mapped */}
+                <ProductSlide />
               </div>
               <div className={styles.button}>
                 <NavLink to={'/cart'}>Go To Checkout</NavLink>
