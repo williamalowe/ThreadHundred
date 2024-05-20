@@ -64,9 +64,17 @@ const SideCart = () => {
                 <ProductSlide />
                 <ProductSlide />
               </div>
-              <div className={styles.button}>
+              <motion.div 
+                className={styles.button}
+                whileHover={{
+                  scale: 1.1
+                }}
+                whileTap={{
+                  scale: 0.9
+                }}
+              >
                 <NavLink to={'/cart'}>Go To Checkout</NavLink>
-              </div>
+              </motion.div>
           </div>
         </motion.div>
       }
