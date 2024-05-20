@@ -60,6 +60,9 @@ const SideCart = () => {
               <div className={styles.items}>
                 {/* to be mapped */}
                 <ProductSlide />
+                <ProductSlide />
+                <ProductSlide />
+                <ProductSlide />
               </div>
               <div className={styles.button}>
                 <NavLink to={'/cart'}>Go To Checkout</NavLink>
