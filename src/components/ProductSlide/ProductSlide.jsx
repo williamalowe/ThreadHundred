@@ -1,5 +1,5 @@
-import styles from './ProductSlide.module.css';
-import { motion } from 'framer-motion';
+import styles from "./ProductSlide.module.css";
+import { motion } from "framer-motion";
 
 const ProductSlide = () => {
   return (
@@ -22,10 +22,10 @@ const ProductSlide = () => {
         <div className={styles.remove}>
           <motion.button
             whileHover={{
-              scale: 1.1
+              scale: 1.1,
             }}
             whileTap={{
-              scale: 0.9
+              scale: 0.9,
             }}
           >
             Remove
@@ -33,7 +33,7 @@ const ProductSlide = () => {
         </div>
       </article>
     </div>
-  )
-}
+  );
+};
 
-export default ProductSlide
+export default ProductSlide;
