@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './HomeCarousel.module.css';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const HomeCarousel = () => {
   const [position, setPosition] = useState(0);
@@ -20,38 +21,63 @@ const HomeCarousel = () => {
   
   return (
     <div className={styles.carousel}>
+      <AnimatePresence mode='popLayout'>
       {
         position === 0 &&
-        <div className={styles.wrapper}>
+        <motion.div 
+          className={styles.wrapper}
+          exit={{
+            x: '-33vw'
+          }}
+          >
           <div className={styles.first}></div>
           <div className={styles.second}></div>
           <div className={styles.third}></div>
-        </div>
+        </motion.div>
       }
+      </AnimatePresence>
+      <AnimatePresence mode='popLayout'>
       {
         position === 1 &&
-        <div className={styles.wrapper}>
+        <motion.div className={styles.wrapper}
+        
+          exit={{
+            x: '-33vw'
+          }}>
           <div className={styles.second}></div>
           <div className={styles.third}></div>
           <div className={styles.fourth}></div>
-        </div>
+        </motion.div>
       }
+      </AnimatePresence>
+      <AnimatePresence mode='popLayout'>
       {
         position === 2 &&
-        <div className={styles.wrapper}>
+        <motion.div className={styles.wrapper}
+        
+          exit={{
+            x: '-33vw'
+          }}>
           <div className={styles.third}></div>
           <div className={styles.fourth}></div>
           <div className={styles.first}></div>
-        </div>
+        </motion.div>
       }
+      </AnimatePresence>
+      <AnimatePresence mode='popLayout'>
       {
         position === 3 &&
-        <div className={styles.wrapper}>
+        <motion.div className={styles.wrapper}
+        
+          exit={{
+            x: '-33vw'
+          }}>
           <div className={styles.fourth}></div>
           <div className={styles.first}></div>
           <div className={styles.second}></div>
-        </div>
+        </motion.div>
       }
+      </AnimatePresence>
     </div>
   )
 }
