@@ -1,11 +1,9 @@
 .trending {
-  border: 2px solid black;
-  margin-top: 2rem;
-  height: 2300px;
-  /* justify-content: center; */
-  /* display: flex;
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 }
 .upper {
   display: flex;
@@ -39,9 +37,4 @@
 }
 .items  {
   display: flex;
-}
-.items>div {
-  width: 20px;
-  height: 20px;
-  background: red
 }

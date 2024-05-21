@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './Trending.module.css';
+import ProductCard from '../../ProductCard/ProductCard';
 
 const Trending = () => {
   return (
     <article className={styles.trending}>
-      {/* <div className={styles.upper}>
+      <div className={styles.upper}>
         <div>
           <h5>Trending Items</h5>
           <h3>Most Popular</h3>
@@ -26,13 +27,11 @@ const Trending = () => {
         </Link>
       </div>
       <div className={styles.items}>
-        <div className=""></div>
-        <div className=""></div>
-        <div className=""></div>
-        <div className=""></div>
-        <div className=""></div>
-        <div className=""></div>
-      </div> */}
+        <ProductCard 
+          img={'./products/product00.jpg'}
+          product={'T Shirt Of The Month Subscription'}
+        />
+      </div>
     </article>
   )
 }
