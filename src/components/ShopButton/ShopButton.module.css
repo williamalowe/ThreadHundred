@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5rem 1rem;
+  width: 240px;
+  height: 60px;
+  border: none;
+  background: var(--highlight-blue);
+  border: 2px solid var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}

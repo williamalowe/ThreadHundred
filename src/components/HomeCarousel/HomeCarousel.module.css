@@ -1,4 +1,5 @@
 .carousel {
+  position: relative;
 }
 .wrapper { 
   display: flex;
@@ -34,4 +35,9 @@
   background: url('/carousel/04.jpg');
   background-position: center;
   background-size: cover;
+}
+.button {
+  position: absolute;
+  bottom: 1%;
+  right: 25%;
 }

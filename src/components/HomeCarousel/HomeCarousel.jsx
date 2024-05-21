@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./HomeCarousel.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import ShopButton from "../ShopButton/ShopButton";
 
 const HomeCarousel = () => {
   const [position, setPosition] = useState(0);
@@ -107,6 +108,9 @@ const HomeCarousel = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <div className={styles.button}>
+        <ShopButton />
+      </div>
     </div>
   );
 };
