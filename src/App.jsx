@@ -6,7 +6,9 @@ const App = () => {
   return (
     <main className={styles.app}>
       <AnnouncementBanner />
-      <Outlet />
+      <div className={styles.content}>
+        <Outlet />
+      </div>
     </main>
   )
 }
