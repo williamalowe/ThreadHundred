@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import styles from './App.module.css';
-import AnnouncementBanner from './assets/components/AnnouncementBanner/AnnouncementBanner';
-import Navbar from './assets/components/Navbar/Navbar';
+import AnnouncementBanner from '../../components/AnnouncementBanner/AnnouncementBanner';
+import Navbar from '../../components/Navbar/Navbar';
 
 const App = () => {
   return (
