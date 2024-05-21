@@ -1,11 +1,17 @@
 import styles from './ProductCard.module.css';
+import { motion } from 'framer-motion'
 
 const ProductCard = ({ img, product }) => {
   return (
-    <div className={styles.card}>
+    <motion.div 
+      className={styles.card}
+      whileHover={{
+        scale: 1.1
+      }}
+    >
       <img src={img} alt="featured product image" />
       <div className={styles.banner}>{product}</div>
-    </div>
+    </motion.div>
   )
 }
 

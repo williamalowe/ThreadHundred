@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   width: 600px;
+  z-index: 100;
 }
 .upper>div {
   text-transform: uppercase;
