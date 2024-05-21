@@ -1,5 +1,6 @@
 import HomeBanner from '../../components/HomeBanner/HomeBanner';
 import HomeCarousel from '../../components/HomeCarousel/HomeCarousel';
+import Trending from '../../components/Trending/Trending';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className={styles.home}>
       <HomeBanner />
       <HomeCarousel />
+      <Trending />
     </div>
   )
 }
