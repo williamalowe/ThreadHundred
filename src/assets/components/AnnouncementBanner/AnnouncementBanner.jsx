@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import styles from './AnnouncementBanner.module.css';
+import { useEffect, useState } from "react";
+import styles from "./AnnouncementBanner.module.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 const AnnouncementBanner = () => {
   const [visibleMessage, setVisibleMessage] = useState(0);
@@ -13,31 +14,76 @@ const AnnouncementBanner = () => {
   useEffect(() => {
     setTimeout(() => {
       nextMessage();
-    }, "5000")
+    }, "5000");
+  }, [visibleMessage]);
 
-  }, [visibleMessage])
-  
   return (
     <div className={styles.announcement}>
-      {
-        visibleMessage === 0 &&
-        <div className={styles.message}>
-          Free AU Shipping for orders over $85.
-        </div>
-      }
-      {
-        visibleMessage === 1 &&
-        <div className={styles.message}>
-          Winter 24&apos; dropping soon!
-        </div>
-      }{
-        visibleMessage === 2 &&
-        <div className={styles.message}>
-          International shipping coming soon!
-        </div>
-      }
+      <AnimatePresence mode="popLayout">
+        {visibleMessage === 0 && (
+          <motion.div
+            className={styles.message}
+            initial={{
+              x: "100%",
+            }}
+            animate={{
+              x: 0,
+            }}
+            exit={{
+              x: "-100%",
+            }}
+            transition={{
+              duration: 1,
+            }}
+          >
+            Free AU Shipping for orders over $85.
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence mode="popLayout">
+        {visibleMessage === 1 && (
+          <motion.div
+            className={styles.message}
+            initial={{
+              x: "100%",
+            }}
+            animate={{
+              x: 0,
+            }}
+            exit={{
+              x: "-100%",
+            }}
+            transition={{
+              duration: 1,
+            }}
+          >
+            Winter 24&apos; dropping soon...
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence mode="popLayout">
+        {visibleMessage === 2 && (
+          <motion.div
+            className={styles.message}
+            initial={{
+              x: "100%",
+            }}
+            animate={{
+              x: 0,
+            }}
+            exit={{
+              x: "-100%",
+            }}
+            transition={{
+              duration: 1,
+            }}
+          >
+            International shipping coming soon
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
-  )
-}
+  );
+};
 
-export default AnnouncementBanner
+export default AnnouncementBanner;
