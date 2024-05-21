@@ -26,7 +26,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33vw",
+              x: "-33.333%"
             }}
             transition={{
               duration: 1,
@@ -44,7 +44,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33vw",
+              x: "-33.333%"
             }}
             transition={{
               duration: 1,
@@ -62,7 +62,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33vw",
+              x: "-33.333%"
             }}
             transition={{
               duration: 1,
@@ -80,7 +80,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33vw",
+              x: "-33.333%"
             }}
             transition={{
               duration: 1,
