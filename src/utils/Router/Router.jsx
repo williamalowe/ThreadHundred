@@ -13,8 +13,8 @@ const Router = () => {
           element: 'home page'
         },
         {
-          path: 'store',
-          element: 'store page'
+          path: 'shop',
+          element: 'shop page'
         },
         {
           path: 'cart',

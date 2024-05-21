@@ -1,0 +1,35 @@
+.navbar {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.link {
+  background: var(--button-color);
+  padding: 0.5rem;
+  width: 100px;
+  text-align: center;
+  border: 2px solid var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+}
+.navbar > a:nth-child(1) {
+  transform: rotate(-2deg);
+}
+.navbar > a:nth-child(2) {
+  transform: rotate(1deg);
+}
+.navbar > a:nth-child(3) {
+  transform: rotate(-4deg);
+}
+.navbar > a:nth-child(4) {
+  transform: rotate(6deg);
+}
+.navbar > a.active > .link {
+  box-shadow: 0 0;
+  transform: scale(1.1);
+}

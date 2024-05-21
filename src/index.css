@@ -2,6 +2,8 @@
 
 :root {
   --header-text: "Danfo", serif;
+  --button-color: #FF7F3E;
+  --text-color: #1f1f1f;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -22,6 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
   font-family: "Nunito", sans-serif;
+  color: var(--text-color);
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
