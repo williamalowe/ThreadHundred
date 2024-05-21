@@ -1,0 +1,28 @@
+.logo {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.logo > img {
+  height: 120px;
+  transform: rotate(-6deg);
+}
+.logo > h3, .logo > h3 > span {
+  font-family: var(--header-text);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border-bottom: 4px solid var(--text-color);
+  color: var(--button-color);
+  border-bottom: 4px solid var(--button-color);
+}
+.logo > h3 {
+  transform: rotate(3deg);
+}
+.logo > h3 > span {
+  color: var(--text-color);  
+  border-bottom: 4px solid var(--text-color);
+}

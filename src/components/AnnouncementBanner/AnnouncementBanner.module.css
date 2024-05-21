@@ -1,0 +1,22 @@
+.announcement {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  width: 100vw;
+  height: 1.5rem;
+  padding: 0.25rem;
+  overflow: hidden;
+}
+.message {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

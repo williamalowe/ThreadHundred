@@ -1,20 +1,20 @@
-import AdBanner from "../../components/AdBanner/AdBanner";
-import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import Navbar from "../../components/Navbar/Navbar";
-import SideCart from "../../components/SideCart/SideCart";
-import Spotlight from "../../components/Spotlight/Spotlight";
-import styles from "./App.module.css";
+import { Outlet } from 'react-router-dom';
+import styles from './App.module.css';
+import AnnouncementBanner from '../../components/AnnouncementBanner/AnnouncementBanner';
+import Navbar from '../../components/Navbar/Navbar';
+import Logo from '../../components/Logo/Logo';
 
 const App = () => {
   return (
     <main className={styles.app}>
-      <SideCart />
+      <AnnouncementBanner />
       <Navbar />
-      <HeroBanner />
-      <AdBanner />
-      <Spotlight />
+      <Logo />
+      <div className={styles.content}>
+        <Outlet />
+      </div>
     </main>
-  );
-};
+  )
+}
 
-export default App;
+export default App

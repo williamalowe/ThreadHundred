@@ -1,0 +1,49 @@
+.trending {
+  padding: 2rem 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  z-index: 100;
+}
+.upper>div {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.upper>div>h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.upper>a {
+  margin-left: auto;
+  height: 100%;
+}
+.upper>a>button {
+  height: 100%;
+  border: 2px solid var(--text-color);
+  background: none;
+  height: 2.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  width: 180px;
+  text-transform: uppercase;
+  box-shadow: 4px 4px var(--text-color);
+  cursor: pointer;
+}
+.items  {
+  padding: 1rem;
+  background: #1f1f1f18;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}

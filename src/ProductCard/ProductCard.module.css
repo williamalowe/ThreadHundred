@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
+  border: 2px solid var(--text-color);
+}
+.card > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 320px;
+}
+.banner {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110%;
+  height: 48px;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  border: 2px solid var(--text-color);
+  background: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 100;
+  transform: rotate(-4deg);
+}
