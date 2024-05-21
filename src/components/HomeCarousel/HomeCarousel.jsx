@@ -34,11 +34,7 @@ const HomeCarousel = () => {
               type: "spring",
             }}
           >
-            <div className={styles.first}>
-              <div className={styles.inner_card}>
-                <div className={styles.card_content}></div>
-              </div>
-            </div>
+            <div className={styles.first}></div>
             <div className={styles.second}></div>
             <div className={styles.third}></div>
           </motion.div>
@@ -76,12 +72,7 @@ const HomeCarousel = () => {
           >
             <div className={styles.third}></div>
             <div className={styles.fourth}></div>
-            <div className={styles.first}>
-              <div>
-                Muralist, Painter, Illustrator - Incredible original artwork X
-                High-quality fashion.
-              </div>
-            </div>{" "}
+            <div className={styles.first}></div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -98,12 +89,7 @@ const HomeCarousel = () => {
             }}
           >
             <div className={styles.fourth}></div>
-            <div className={styles.first}>
-              <div>
-                Muralist, Painter, Illustrator - Incredible original artwork X
-                High-quality fashion.
-              </div>
-            </div>{" "}
+            <div className={styles.first}></div>
             <div className={styles.second}></div>
           </motion.div>
         )}
