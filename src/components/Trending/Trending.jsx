@@ -31,6 +31,14 @@ const Trending = () => {
           img={'./products/product00.jpg'}
           product={'T Shirt Of The Month Subscription'}
         />
+        <ProductCard 
+          img={'./products/product01.jpg'}
+          product={'Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt'}
+        />
+        <ProductCard 
+          img={'./products/product02.jpg'}
+          product={'Goated - T Shirt'}
+        />
       </div>
     </article>
   )

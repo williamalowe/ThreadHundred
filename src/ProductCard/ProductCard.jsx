@@ -6,7 +6,8 @@ const ProductCard = ({ img, product }) => {
     <motion.div 
       className={styles.card}
       whileHover={{
-        scale: 1.1
+        scale: 1.1,
+        zIndex: 110
       }}
     >
       <img src={img} alt="featured product image" />
