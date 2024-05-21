@@ -1,0 +1,32 @@
+.carousel {
+}
+.wrapper { 
+  display: flex;
+}
+.card { 
+  flex: 1;
+  height: 75vh;
+}
+.first, .second, .third, .fourth {
+  composes: card;
+}
+.first {
+    background: url('/carousel/01.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.second {
+  background: url('/carousel/02.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.third {
+  background: url('/carousel/03.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.fourth {
+  background: url('/carousel/04.jpg');
+  background-position: center;
+  background-size: cover;
+}
