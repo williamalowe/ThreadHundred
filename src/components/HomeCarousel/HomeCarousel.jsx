@@ -16,7 +16,7 @@ const HomeCarousel = () => {
   useEffect(() => {
     setTimeout(() => {
       next();
-    }, "5000");
+    }, "6000");
   }, [position]);
 
   return (
@@ -26,14 +26,18 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33.333%"
+              x: "-33.333%",
             }}
             transition={{
               duration: 1,
               type: "spring",
             }}
           >
-            <div className={styles.first}></div>
+            <div className={styles.first}>
+              <div className={styles.inner_card}>
+                <div className={styles.card_content}></div>
+              </div>
+            </div>
             <div className={styles.second}></div>
             <div className={styles.third}></div>
           </motion.div>
@@ -44,7 +48,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33.333%"
+              x: "-33.333%",
             }}
             transition={{
               duration: 1,
@@ -62,7 +66,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33.333%"
+              x: "-33.333%",
             }}
             transition={{
               duration: 1,
@@ -71,7 +75,12 @@ const HomeCarousel = () => {
           >
             <div className={styles.third}></div>
             <div className={styles.fourth}></div>
-            <div className={styles.first}></div>
+            <div className={styles.first}>
+              <div>
+                Muralist, Painter, Illustrator - Incredible original artwork X
+                High-quality fashion.
+              </div>
+            </div>{" "}
           </motion.div>
         )}
       </AnimatePresence>
@@ -80,7 +89,7 @@ const HomeCarousel = () => {
           <motion.div
             className={styles.wrapper}
             exit={{
-              x: "-33.333%"
+              x: "-33.333%",
             }}
             transition={{
               duration: 1,
@@ -88,7 +97,12 @@ const HomeCarousel = () => {
             }}
           >
             <div className={styles.fourth}></div>
-            <div className={styles.first}></div>
+            <div className={styles.first}>
+              <div>
+                Muralist, Painter, Illustrator - Incredible original artwork X
+                High-quality fashion.
+              </div>
+            </div>{" "}
             <div className={styles.second}></div>
           </motion.div>
         )}
