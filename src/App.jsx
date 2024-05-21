@@ -1,10 +1,11 @@
+import { Outlet } from 'react-router-dom';
 import styles from './App.module.css';
 
 const App = () => {
   return (
-    <div>
-      Hello World
-    </div>
+    <main className={styles.app}>
+      <Outlet />
+    </main>
   )
 }
 
