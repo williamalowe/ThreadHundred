@@ -30,6 +30,5 @@
   transform: rotate(6deg);
 }
 .navbar > a.active > .link {
-  box-shadow: 0 0;
-  transform: scale(1.1);
+  /* box-shadow: 0 0; */
 }
