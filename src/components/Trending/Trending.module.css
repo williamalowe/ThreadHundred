@@ -36,6 +36,7 @@
   text-transform: uppercase;
   box-shadow: 4px 4px var(--text-color);
   cursor: pointer;
+  background: var(--highlight-pink);
 }
 .items  {
   padding: 1rem;
