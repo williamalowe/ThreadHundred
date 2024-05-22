@@ -1,7 +1,7 @@
 import styles from './ProductCard.module.css';
 import { motion } from 'framer-motion'
 
-const ProductCard = ({ img, product }) => {
+const ProductCard = ({ img, product, color }) => {
   return (
     <motion.div 
       className={styles.card}
@@ -11,7 +11,7 @@ const ProductCard = ({ img, product }) => {
       }}
     >
       <img src={img} alt="featured product image" />
-      <div className={styles.banner}>{product}</div>
+      <div className={styles.banner} style={{background: '#' + color}}>{product}</div>
     </motion.div>
   )
 }

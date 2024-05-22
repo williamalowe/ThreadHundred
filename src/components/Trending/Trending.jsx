@@ -30,14 +30,17 @@ const Trending = () => {
         <ProductCard 
           img={'./products/product00.jpg'}
           product={'T Shirt Of The Month Subscription'}
+          color={'FC2947'}
         />
         <ProductCard 
           img={'./products/product01.jpg'}
           product={'Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt'}
+          color={'7dfc29'}
         />
         <ProductCard 
           img={'./products/product02.jpg'}
           product={'Goated - T Shirt'}
+          color={'29c0fc'}
         />
       </div>
     </article>
