@@ -1,0 +1,18 @@
+.sidecart {
+
+}
+.sidecart > button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  top: 1rem;
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--text-color);
+  background: #fff;
+  font-size: 1.2rem;
+  z-index: 100;
+  cursor: pointer;
+}

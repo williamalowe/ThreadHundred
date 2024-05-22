@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Logo from "../../components/Logo/Logo";
 import HomeBanner from "../../components/HomeBanner/HomeBanner";
 import { createContext, useState } from "react";
+import SideCart from "../../components/SideCart/SideCart";
 
 export const CartContext = createContext({
   cart: [],
@@ -33,6 +34,7 @@ const App = () => {
       }}
     >
       <main className={styles.app}>
+        <SideCart />
         <AnnouncementBanner />
         <Navbar />
         <Logo />
