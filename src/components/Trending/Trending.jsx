@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import styles from './Trending.module.css';
-import ProductCard from '../../ProductCard/ProductCard';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import styles from "./Trending.module.css";
+import ProductCard from "../../ProductCard/ProductCard";
 
 const Trending = () => {
   return (
@@ -11,15 +11,15 @@ const Trending = () => {
           <h5>Trending Items</h5>
           <h3>Most Popular</h3>
         </div>
-        <Link to='/shop'>
+        <Link to="/shop">
           <motion.button
             whileHover={{
               boxShadow: 0,
               x: 4,
-              y: 4
+              y: 4,
             }}
             whileTap={{
-              scale: 0.9
+              scale: 0.9,
             }}
           >
             See More
@@ -27,24 +27,26 @@ const Trending = () => {
         </Link>
       </div>
       <div className={styles.items}>
-        <ProductCard 
-          img={'./products/product00.jpg'}
-          product={'T Shirt Of The Month Subscription'}
-          color={'FC2947'}
+        <ProductCard
+          img={"./products/product00.jpg"}
+          product={"T Shirt Of The Month Subscription"}
+          color={"FC2947"}
+          tag={"Subscribe!"}
         />
-        <ProductCard 
-          img={'./products/product01.jpg'}
-          product={'Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt'}
-          color={'7dfc29'}
+        <ProductCard
+          img={"./products/product01.jpg"}
+          product={"Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt"}
+          color={"7dfc29"}
+          tag={"New"}
         />
-        <ProductCard 
-          img={'./products/product02.jpg'}
-          product={'Goated - T Shirt'}
-          color={'29c0fc'}
+        <ProductCard
+          img={"./products/product02.jpg"}
+          product={"Goated - T Shirt"}
+          color={"29c0fc"}
         />
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default Trending
+export default Trending;

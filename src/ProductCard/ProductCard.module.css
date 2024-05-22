@@ -30,3 +30,13 @@
   z-index: 100;
   transform: rotate(-4deg);
 }
+.tag {
+  background: #fcc429;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--text-color);
+  text-transform: uppercase;
+  font-weight: 800;
+}
