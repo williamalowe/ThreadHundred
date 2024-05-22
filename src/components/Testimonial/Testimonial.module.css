@@ -2,7 +2,7 @@
   width: 768px;
   height: 140px;
   padding: 1rem;
-  display: flex
+  display: flex;
 }
 .testimonial > div:first-child {
   flex: 1;
