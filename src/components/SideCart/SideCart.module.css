@@ -1,18 +1,81 @@
 .sidecart {
 
 }
-.sidecart > button {
+.button {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   right: 1rem;
-  top: 1rem;
   width: 64px;
   height: 64px;
   border: 2px solid var(--text-color);
-  background: #fff;
+  background: var(--button-color);
+  box-shadow: 4px 4px var(--text-color);
   font-size: 1.2rem;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
+}
+.open_button {
+  composes: button;
+  top: 1rem;
+}
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 5vh;
+  right: 0;
+  height: 90vh;
+  border-left: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  background: #fff;
+  z-index: 100;
+}
+.header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.header > h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.header > p {
+  font-weight: 600;
+}
+.products {
+  flex-grow: 1;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+.footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.footer > button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  width: 75%;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  border: 2px solid var(--text-color);
+  background: var(--highlight-yellow);
+  box-shadow: 4px 4px var(--text-color);
+  cursor: pointer;
+}
+.close_button {
+  composes: button;
+  /* bottom: 1rem; */
+  top: 1rem;
 }
