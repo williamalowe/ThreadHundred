@@ -1,11 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ProductListing.module.css";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import { CartContext } from "../../views/App/App";
 
 const ProductListing = ({ name, price, img, tag }) => {
+  const { cart, addProduct } = useContext(CartContext);
+
   return (
-    <motion.div 
+    <motion.div
       className={styles.card}
       whileHover={{
         scale: 1.1,
@@ -14,7 +18,7 @@ const ProductListing = ({ name, price, img, tag }) => {
       <div className={styles.upper}>
         <div>{tag && <div className={styles.tag}>{tag}</div>}</div>
         <div>
-          <button>
+          <button onClick={() => addProduct(name, img, price)}>
             <FontAwesomeIcon icon={faCartShopping} />
           </button>
         </div>
