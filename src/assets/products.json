@@ -12,14 +12,14 @@
       "productName": "Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt",
       "productPrice": 55.5,
       "productImg": "./products/product01.jpg",
-      "productTag": ""
+      "productTag": "New"
     },
     {
       "productID": 2,
       "productName": "Goated - T Shirt",
       "productPrice": 35.0,
       "productImg": "./products/product02.jpg",
-      "productTag": ""
+      "productTag": "New"
     },
     {
       "productID": 3,

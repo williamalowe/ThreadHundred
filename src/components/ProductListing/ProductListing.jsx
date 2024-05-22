@@ -1,17 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './ProductListing.module.css';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "./ProductListing.module.css";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { motion } from 'framer-motion';
 
 const ProductListing = ({ name, price, img, tag }) => {
   return (
-    <div className={styles.card}>
+    <motion.div 
+      className={styles.card}
+      whileHover={{
+        scale: 1.1,
+      }}
+    >
       <div className={styles.upper}>
-        <div>
-          {
-            tag && 
-            <div className={styles.tag}>{tag}</div>
-          }
-        </div>
+        <div>{tag && <div className={styles.tag}>{tag}</div>}</div>
         <div>
           <button>
             <FontAwesomeIcon icon={faCartShopping} />
@@ -21,10 +22,10 @@ const ProductListing = ({ name, price, img, tag }) => {
       <img src={img} alt={name} />
       <div className={styles.lower}>
         <h5>{name}</h5>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default ProductListing
+export default ProductListing;
