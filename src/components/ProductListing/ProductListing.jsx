@@ -8,8 +8,8 @@ const ProductListing = ({ name, price, img, tag }) => {
       <div className={styles.upper}>
         <div>
           {
-            // tag && 
-            <div className={styles.tag}>tag here</div>
+            tag && 
+            <div className={styles.tag}>{tag}</div>
           }
         </div>
         <div>
@@ -18,10 +18,10 @@ const ProductListing = ({ name, price, img, tag }) => {
           </button>
         </div>
       </div>
-      <img src="/products/product01.jpg" alt="product image" />
+      <img src={img} alt={name} />
       <div className={styles.lower}>
-        <h5>Warrior Blossom - Premium Soft-Washed Long-Sleeve Shirt</h5>
-        <p>$55.5</p>
+        <h5>{name}</h5>
+        <p>{price}</p>
       </div>
     </div>
   )

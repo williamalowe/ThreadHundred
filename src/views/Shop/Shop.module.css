@@ -1,8 +1,9 @@
 .shop {
   background: var(--highlight-pink);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 .content {
   min-width: 640px;
