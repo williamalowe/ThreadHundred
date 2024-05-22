@@ -2,8 +2,8 @@
   background: var(--highlight-pink);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 .content {
   min-width: 640px;
@@ -19,8 +19,12 @@
   font-weight: 800;
   text-transform: uppercase;
 }
-/* test */
-.products {
-  display: flex;
-  gap: 1rem;
+.footer {
+  margin-top: 2rem;
+  width: 100%;
+  background: var(--highlight-yellow);
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 800;
 }

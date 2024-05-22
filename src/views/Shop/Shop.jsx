@@ -13,6 +13,9 @@ const Shop = () => {
           <ProductList />
         </div>
       </div>
+      <div className={styles.footer}>
+        New Products Added Monthly!
+      </div>
     </div>
   )
 }

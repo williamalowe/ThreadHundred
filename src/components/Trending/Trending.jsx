@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./Trending.module.css";
-import ProductCard from "../../ProductCard/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 
 const Trending = () => {
   return (
