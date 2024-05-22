@@ -6,13 +6,12 @@ import { useState, useContext } from "react";
 import { CartContext } from "../../views/App/App";
 
 const ProductListing = ({ name, price, img, tag }) => {
-  const { cart, addProduct } = useContext(CartContext);
+  const { addProduct } = useContext(CartContext);
   const [isAdded, setIsAdded] = useState(false);
 
   const addItem = () => {
     addProduct(name, img, price);
     setIsAdded(true);
-    console.log(cart);
   };
 
   return (
