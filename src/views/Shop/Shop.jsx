@@ -1,3 +1,4 @@
+import ProductListing from '../../components/ProductListing/ProductListing';
 import styles from './Shop.module.css';
 
 const Shop = () => {
@@ -8,7 +9,9 @@ const Shop = () => {
           All Products
         </div>
         <div className={styles.products}>
-          
+          <ProductListing />
+          <ProductListing />
+          <ProductListing />
         </div>
       </div>
     </div>
