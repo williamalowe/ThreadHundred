@@ -7,7 +7,7 @@ import styles from './Home.module.css';
 const Home = () => {
   return (
     <div className={styles.home}>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
       <HomeCarousel />
       <Trending />
       <Reviews />

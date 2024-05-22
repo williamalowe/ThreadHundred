@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import AnnouncementBanner from '../../components/AnnouncementBanner/AnnouncementBanner';
 import Navbar from '../../components/Navbar/Navbar';
 import Logo from '../../components/Logo/Logo';
+import HomeBanner from '../../components/HomeBanner/HomeBanner';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar />
       <Logo />
       <div className={styles.content}>
+        <HomeBanner />
         <Outlet />
       </div>
     </main>
