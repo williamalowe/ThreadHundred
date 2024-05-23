@@ -7,7 +7,7 @@ const ProductCard = ({ img, product, color, tag }) => {
       className={styles.card}
       whileHover={{
         scale: 1.1,
-        zIndex: 110
+        zIndex: 50
       }}
     >
       <img src={img} alt="featured product image" />

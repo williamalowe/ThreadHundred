@@ -27,7 +27,7 @@
   background: #fff;
   font-weight: 800;
   text-transform: uppercase;
-  z-index: 100;
+  z-index: 10;
   transform: rotate(-4deg);
 }
 .tag {
