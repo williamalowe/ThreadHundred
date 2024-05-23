@@ -2,17 +2,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ProductListing.module.css";
 import { faCartShopping, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../../views/App/App";
 
 const ProductListing = ({ name, price, img, tag }) => {
-  const { addProduct } = useContext(CartContext);
+  const { addProduct, cart } = useContext(CartContext);
   const [isAdded, setIsAdded] = useState(false);
 
-  const addItem = () => {
-    addProduct(name, img, price);
-    setIsAdded(true);
-  };
+  const inCart = () => {
+    setIsAdded(false);
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i].product === name) {
+        setIsAdded(true);
+      }
+    }
+  }
+  useEffect(() => {
+    inCart();
+  }, [cart])
 
   return (
     <motion.div
@@ -27,7 +34,7 @@ const ProductListing = ({ name, price, img, tag }) => {
           {isAdded ? (
             <FontAwesomeIcon icon={faCheck} />
           ) : (
-            <button onClick={() => addItem()}>
+            <button onClick={() => addProduct(name, img, price)}>
               <FontAwesomeIcon icon={faCartShopping} />
             </button>
           )}
