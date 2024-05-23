@@ -27,7 +27,9 @@
   min-width: 480px;
   flex: 1;
   padding: 0.5rem;
+  width: 100%;
+}
+.right {
   background: #fff;
   border: 2px solid var(--text-color);
-  width: 100%;
 }

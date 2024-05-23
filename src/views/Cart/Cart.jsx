@@ -2,6 +2,7 @@ import styles from './Cart.module.css';
 import React, { useContext } from 'react'
 import { CartContext } from '../App/App'
 import CartList from '../../components/CartList/CartList';
+import CheckoutForm from '../../components/CheckoutForm/CheckoutForm';
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
@@ -14,7 +15,7 @@ const Cart = () => {
         </div>
         <div className={styles.products}>
           <div className={styles.left}>
-            
+            <CheckoutForm />
           </div>
           <div className={styles.right}>
             <h3>Your Cart</h3>

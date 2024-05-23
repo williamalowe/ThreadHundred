@@ -1,0 +1,81 @@
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact>div {
+  display: flex;
+}
+.contact > div > h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.contact>div>p {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+.contact>div>p>span {
+  color: var(--highlight-darkblue);
+  cursor: pointer;
+}
+input {
+  padding: 0.25rem;
+  font-family: "Nunito", sans-serif;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox > input {
+  cursor: pointer;
+}
+.checkbox > label {
+  font-size: 0.8rem;
+}
+.shipping {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.shipping > h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.shipping > div {
+  display: flex;
+  gap: 0.25rem;
+}
+.shipping > div > input {
+  flex: 1;
+}
+.buttons {
+  margin-top: auto;
+  display: flex;
+}
+.buttons > button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 800;
+}
+.buttons > button:first-child {
+  border: none;
+  background: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--highlight-darkblue);
+}
+.buttons > button:last-child {
+  margin-left: auto;
+  border: 2px solid var(--text-color);
+  background: var(--highlight-orange);
+  color: var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+}
