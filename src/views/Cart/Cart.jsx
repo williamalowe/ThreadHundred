@@ -1,8 +1,8 @@
-import styles from './Cart.module.css';
-import React, { useContext } from 'react'
-import { CartContext } from '../App/App'
-import CartList from '../../components/CartList/CartList';
-import CheckoutForm from '../../components/CheckoutForm/CheckoutForm';
+import styles from "./Cart.module.css";
+import React, { useContext } from "react";
+import { CartContext } from "../App/App";
+import CartList from "../../components/CartList/CartList";
+import CheckoutForm from "../../components/CheckoutForm/CheckoutForm";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
@@ -10,9 +10,7 @@ const Cart = () => {
   return (
     <div className={styles.cart}>
       <div className={styles.content}>
-        <div className={styles.banner}>
-          Your Cart
-        </div>
+        <div className={styles.banner}>Your Cart</div>
         <div className={styles.products}>
           <div className={styles.left}>
             <CheckoutForm />
@@ -24,7 +22,7 @@ const Cart = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
