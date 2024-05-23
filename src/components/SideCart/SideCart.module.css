@@ -50,7 +50,8 @@
   font-weight: 600;
 }
 .products {
-  flex-grow: 1;
+  flex: 1;
+  overflow: scroll;
   border-top: 2px solid var(--text-color);
   border-bottom: 2px solid var(--text-color);
 }
