@@ -18,3 +18,11 @@
 .desc > h5 {
   margin-top: auto;
 }
+.button > button {
+  background: var(--highlight-pink);
+  border: 2px solid var(--text-color);
+  width: 32px;
+  height: 32px;
+  box-shadow: 4px 4px var(--text-color);
+  cursor: pointer;
+}

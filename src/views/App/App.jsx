@@ -26,11 +26,17 @@ const App = () => {
     console.log(cart);
   };
 
+  const removeProduct = (target) => {
+    const updatedCart = cart.filter((item) => item.product !== target);
+    setCart(updatedCart);
+  }
+
   return (
     <CartContext.Provider
       value={{
         cart,
         addProduct,
+        removeProduct
       }}
     >
       <main className={styles.app}>

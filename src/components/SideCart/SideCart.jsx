@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './SideCart.module.css';
 import { faCancel, faCartShopping, faCross, faX } from '@fortawesome/free-solid-svg-icons';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../views/App/App';
 import { motion, AnimatePresence } from 'framer-motion';
 import CartItem from '../CartItem/CartItem';
@@ -9,6 +9,20 @@ import CartItem from '../CartItem/CartItem';
 const SideCart = () => {
   const { cart } = useContext(CartContext);
   const [showCart, setShowCart] = useState(false);
+  const [total, setTotal] = useState (0);
+
+  const calcTotal = () => {
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+      total += cart[i].price;
+    }
+    return total;
+  }
+
+  useEffect(() => {
+    setTotal(calcTotal);
+
+  }, [cart])
 
   return (
     <div className={styles.sidecart}>
@@ -72,7 +86,7 @@ const SideCart = () => {
               
             </div>
             <div className={styles.footer}>
-              <h3>TOTAL: $VALUE</h3>
+              <h3>TOTAL: ${total}</h3>
               <motion.button
                 whileHover={{
                   boxShadow: 0,
