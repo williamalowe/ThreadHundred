@@ -4,6 +4,7 @@ import { faCancel, faCartShopping, faCross, faX } from '@fortawesome/free-solid-
 import { useContext, useState } from 'react';
 import { CartContext } from '../../views/App/App';
 import { motion, AnimatePresence } from 'framer-motion';
+import CartItem from '../CartItem/CartItem';
 
 const SideCart = () => {
   const { cart } = useContext(CartContext);
@@ -59,10 +60,16 @@ const SideCart = () => {
             </div>
             <div className={styles.products}>
               {
-                cart.map((item) => 
-                  <li>{item.product}</li>
+                cart.map((item, index) => 
+                <CartItem 
+                  key={index}
+                  img={item.img}
+                  product={item.product}
+                  price={item.price}
+                />
                 )
               }
+              
             </div>
             <div className={styles.footer}>
               <h3>TOTAL: $VALUE</h3>

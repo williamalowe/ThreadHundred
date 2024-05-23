@@ -76,6 +76,5 @@
 }
 .close_button {
   composes: button;
-  /* bottom: 1rem; */
   top: 1rem;
 }
