@@ -1,0 +1,20 @@
+.item {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.img {
+  flex: 1;
+}
+.img > img {
+  height: 100%;
+}
+.product {
+  flex: 2;
+}
+.product, .price {
+  display: flex;
+  align-items: center;
+}

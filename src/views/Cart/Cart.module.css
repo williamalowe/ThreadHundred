@@ -19,12 +19,15 @@
   font-weight: 800;
   text-transform: uppercase;
 }
-.footer {
-  margin-top: 2rem;
+.products {
+  display: flex;
+  gap: 1rem;
+}
+.left, .right {
+  min-width: 480px;
+  flex: 1;
+  padding: 0.5rem;
+  background: #fff;
+  border: 2px solid var(--text-color);
   width: 100%;
-  background: var(--highlight-yellow);
-  padding: 0.25rem;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 800;
 }
