@@ -1,5 +1,4 @@
 .sidecart {
-
 }
 .button {
   position: fixed;
@@ -63,12 +62,14 @@
   justify-content: center;
   gap: 0.5rem;
 }
-.footer > button {
+.footer > a {
+  text-decoration: none;
+}
+.footer > a > button {
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   font-weight: 800;
-  width: 75%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
   text-transform: uppercase;
   border: 2px solid var(--text-color);
   background: var(--highlight-yellow);
