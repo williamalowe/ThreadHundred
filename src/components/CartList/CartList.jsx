@@ -26,7 +26,7 @@ const CartList = () => {
   useEffect(() => {
     setTotal(calcTotal);
     checkShipping();
-  }, [cart])
+  }, [cart, total])
 
   return (
     <div className={styles.list}>
