@@ -21,7 +21,7 @@ const Cart = () => {
         <div className={styles.banner}>Your Cart</div>
         <div className={styles.products}>
           <div className={styles.left}>
-            {/* <CheckoutForm /> */}
+            <CheckoutForm />
           </div>
           <div className={styles.right}>
             <h3>Your Cart</h3>
