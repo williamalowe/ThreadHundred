@@ -42,7 +42,7 @@ const App = () => {
       <main className={styles.app}>
         <SideCart />
         <AnnouncementBanner />
-        {/* <Navbar /> */}
+        <Navbar />
         {/* <Logo />
         <div className={styles.content}>
           <HomeBanner />

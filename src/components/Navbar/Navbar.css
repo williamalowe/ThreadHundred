@@ -30,6 +30,42 @@
 .navbar > a:nth-child(4) {
   transform: rotate(6deg);
 }
-.navbar > a.active > .link {
-  /* box-shadow: 0 0; */
+.mobile {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.mobile > button {
+  border: 2px solid var(--text-color);
+  background: var(--highlight-blue);
+  width: 32px;
+  height: 32px;
+  box-shadow: 4px 4px var(--text-color);
+}
+.mobile > div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mobile > div > a {
+  text-decoration: none;
+}
+.mobile_link {
+  padding: 0.25rem 1rem;
+  border: 2px solid var(--text-color);
+  text-transform: uppercase;
+  font-weight: 800;
+  box-shadow: 4px 4px var(--text-color);
+  background: var(--highlight-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
