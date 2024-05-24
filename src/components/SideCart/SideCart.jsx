@@ -186,7 +186,13 @@ const SideCart = () => {
             <div className={styles.mob_footer}>
               <h3>Total: ${total}</h3>
               <Link to={'/cart'}>
-                <button>Checkout</button>
+                <motion.button
+                  whileTap={{
+                    scale: 0.9
+                  }}
+                >
+                  Checkout
+                </motion.button>
               </Link>
             </div>
           </motion.div>
