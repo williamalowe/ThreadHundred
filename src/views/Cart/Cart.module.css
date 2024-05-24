@@ -6,7 +6,6 @@
   align-items: center;
 }
 .content {
-  padding: 1rem;
   min-width: 640px;
   max-width: 1280px;
 }
@@ -37,6 +36,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    font-size: 1.2rem;
+  }
   .content {
     display: flex;
     flex-direction: column;
@@ -44,5 +46,8 @@
   }
   .products {
     flex-direction: column-reverse;
+  }
+  .left, .right {
+    min-width: 100%;
   }
 }
