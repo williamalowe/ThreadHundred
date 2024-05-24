@@ -1,3 +1,4 @@
+import ContactForm from "../../components/ContactForm/ContactForm";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
@@ -22,6 +23,7 @@ const Contact = () => {
             fill out the form provided below:
           </p>
         </div>
+        <ContactForm />
       </div>
     </div>
   );
