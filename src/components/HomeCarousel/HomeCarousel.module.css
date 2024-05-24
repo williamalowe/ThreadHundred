@@ -38,8 +38,8 @@
 }
 .button {
   position: absolute;
-  bottom: 1%;
-  right: 25%;
+  bottom: 15%;
+  left: 25%;
 }
 .mobile {
   display: none;
