@@ -1,5 +1,3 @@
-.sidecart {
-}
 .button {
   position: fixed;
   display: flex;
@@ -79,4 +77,34 @@
 .close_button {
   composes: button;
   top: 1rem;
+}
+.mobile {
+  display: none;
+}
+.mob_button {
+  composes: button;
+  bottom: 1rem;
+}
+.mob_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  z-index: 200;
+  border-top: 2px solid var(--text-color);
+}
+.mob_close_button {
+  composes: button;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidecart {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
