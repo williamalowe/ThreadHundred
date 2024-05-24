@@ -4,10 +4,23 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <motion.nav 
+      className='navbar'
+    >
       <NavLink to='/'>
         <motion.div 
           className='link'
+          initial={{
+            opacity: 0,
+            x: -100
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.5
+            }
+          }}
           whileHover={{
             boxShadow: 0,
             x: 4,
@@ -23,6 +36,17 @@ const Navbar = () => {
       <NavLink to='/shop'>
         <motion.div 
           className='link'
+          initial={{
+            opacity: 0,
+            x: -200
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.5
+            }
+          }}
           whileHover={{
             scale: 1.1,
             boxShadow: 0,
@@ -39,6 +63,17 @@ const Navbar = () => {
       <NavLink to='/cart'>
         <motion.div 
           className='link'
+          initial={{
+            opacity: 0,
+            x: -300
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.5
+            }
+          }}
           whileHover={{
             boxShadow: 0,
             x: 4,
@@ -54,6 +89,17 @@ const Navbar = () => {
       <NavLink to='/contact'>
       <motion.div 
       className='link'
+      initial={{
+        opacity: 0,
+        x: -400
+      }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 0.5
+        }
+      }}
       whileHover={{
         boxShadow: 0,
         x: 4,
@@ -66,7 +112,7 @@ const Navbar = () => {
         Contact
       </motion.div>
       </NavLink>
-    </nav>
+    </motion.nav>
   )
 }
 
