@@ -48,3 +48,16 @@
   justify-content: center;
   gap: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .upper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .upper > a {
+    display: none;
+  }
+  .items {
+    padding: 0;
+  }
+}

@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .announcement {
+    padding-bottom: 1rem;
+  }
   .message {
     font-size: 0.8rem;
   }
