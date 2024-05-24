@@ -26,3 +26,14 @@
   box-shadow: 4px 4px var(--text-color);
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 0.5rem 0;
+  }
+  .desc {
+    max-height: 100px;
+    flex-direction: row;
+    width: 70vw;
+  }
+}
