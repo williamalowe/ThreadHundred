@@ -18,7 +18,12 @@
   font-family: var(--header-text);
   font-size: 2rem;
 }
+.logo > div > div:first-child {
+  width: fit-content;
+  border-top: 4px solid var(--button-color);
+}
 .logo > div > div:last-child {
   color: var(--button-color);
-  padding-left: 2rem
+  margin-left: 2rem;
+  border-bottom: 4px solid var(--text-color);
 }
