@@ -87,19 +87,42 @@
 }
 .mob_bar {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   width: 100vw;
   background: #fff;
   z-index: 200;
   border-top: 2px solid var(--text-color);
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 .mob_close_button {
   composes: button;
   bottom: 1rem;
   left: 1rem;
 }
-
+.mob_list {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+}
+.mob_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mob_footer > a {
+  text-decoration: none;
+}
+.mob_footer > a > button {
+  text-transform: uppercase;
+  background: var(--highlight-yellow);
+  border: 2px solid var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  font-weight: 800;
+}
 @media screen and (max-width: 768px) {
   .sidecart {
     display: none;

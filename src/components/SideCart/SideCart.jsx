@@ -157,7 +157,7 @@ const SideCart = () => {
           </motion.button>
         )}
       </AnimatePresence>
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="">
         {
           showCart && 
           <motion.div 
@@ -172,11 +172,8 @@ const SideCart = () => {
               y: 200
             }}
           >
-            <div className={styles.header}>
-              <h3>Your Cart</h3>
-              <p>{cart.length} Items</p>
-            </div>
-            <div className={styles.products}>
+            <h3>Your cart: {cart.length} items</h3>
+            <div className={styles.mob_list}>
               {cart.map((item, index) => (
                 <CartItem
                   key={index}
@@ -186,23 +183,12 @@ const SideCart = () => {
                 />
               ))}
             </div>
-            <div className={styles.footer}>
-              <h3>TOTAL: ${total}</h3>
-              <Link to={"/cart"}>
-                <motion.button
-                  whileHover={{
-                    boxShadow: 0,
-                    x: 4,
-                    y: 4,
-                  }}
-                  whileTap={{
-                    scale: 0.9,
-                  }}
-                >
-                  Checkout
-                </motion.button>
+            <div className={styles.mob_footer}>
+              <h3>Total: ${total}</h3>
+              <Link to={'/cart'}>
+                <button>Checkout</button>
               </Link>
-              </div>
+            </div>
           </motion.div>
         }
       </AnimatePresence>
