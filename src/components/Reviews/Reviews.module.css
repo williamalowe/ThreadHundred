@@ -17,6 +17,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .reviews {
+    width: 100vw;
+    overflow: hidden;
+  }
   .reviews > h3 {
     text-align: center;
   }
