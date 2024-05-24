@@ -3,6 +3,7 @@ import App from "../../views/App/App";
 import Home from "../../views/Home/Home";
 import Shop from "../../views/Shop/Shop";
 import Cart from "../../views/Cart/Cart";
+import Contact from "../../views/Contact/Contact";
 
 const Router = () => {
   const Router = createBrowserRouter([
@@ -25,7 +26,7 @@ const Router = () => {
         },
         {
           path: 'contact',
-          element: 'contact page'
+          element: <Contact />
         },
       ]
     }
