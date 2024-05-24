@@ -5,7 +5,10 @@ const Logo = () => {
   return (
     <Link to={'/'} className={styles.logo}>
       <img src="/logo.png" alt="" />
-      <h3>Thread<span>Hundred</span></h3>
+      <div>
+        <div>Thread</div>
+        <div>Hundred</div>
+      </div>
     </Link>
   )
 }
