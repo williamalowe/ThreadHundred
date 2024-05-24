@@ -27,3 +27,13 @@
   margin-left: 2rem;
   border-bottom: 4px solid var(--text-color);
 }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    justify-content: center;
+    width: 100%;
+  }
+  .logo > div {
+    display: none;
+  }
+}

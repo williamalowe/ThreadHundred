@@ -67,5 +67,6 @@
   }
   .mobile {
     display: block;
+    z-index: 200;
   }
 }

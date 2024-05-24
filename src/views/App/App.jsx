@@ -43,11 +43,11 @@ const App = () => {
         <SideCart />
         <AnnouncementBanner />
         <Navbar />
-        {/* <Logo />
+        <Logo />
         <div className={styles.content}>
           <HomeBanner />
-          <Outlet />
-        </div> */}
+          {/* <Outlet /> */}
+        </div>
       </main>
     </CartContext.Provider>
   );
