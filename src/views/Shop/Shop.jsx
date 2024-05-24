@@ -15,7 +15,7 @@ const Shop = () => {
       <div className={styles.content}>
         <div className={styles.banner}>All Products</div>
         <div className={styles.products}>
-          <ProductList />
+          {/* <ProductList /> */}
         </div>
       </div>
       <div className={styles.footer}>New Products Added Monthly!</div>
