@@ -49,3 +49,11 @@
 .lower > h5 {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    aspect-ratio: none;
+    width: 80vw;
+    height: 100%;
+  }
+}
