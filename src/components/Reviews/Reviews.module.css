@@ -15,3 +15,9 @@
 .reviews > p {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .reviews > h3 {
+    text-align: center;
+  }
+}
