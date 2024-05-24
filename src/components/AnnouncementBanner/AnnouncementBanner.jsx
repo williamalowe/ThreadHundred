@@ -78,7 +78,7 @@ const AnnouncementBanner = () => {
               duration: 1,
             }}
           >
-            International shipping coming soon
+            International shipping coming soon!
           </motion.div>
         )}
       </AnimatePresence>

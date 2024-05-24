@@ -42,12 +42,12 @@ const App = () => {
       <main className={styles.app}>
         <SideCart />
         <AnnouncementBanner />
-        <Navbar />
-        <Logo />
+        {/* <Navbar /> */}
+        {/* <Logo />
         <div className={styles.content}>
           <HomeBanner />
           <Outlet />
-        </div>
+        </div> */}
       </main>
     </CartContext.Provider>
   );
