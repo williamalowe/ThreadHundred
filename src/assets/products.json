@@ -51,34 +51,27 @@
     },
     {
       "productID": 7,
-      "productName": "I'm Watching - Green T Shirt",
-      "productPrice": 30.0,
-      "productImg": "./products/product07.jpg",
-      "productTag": ""
-    },
-    {
-      "productID": 8,
       "productName": "StatixBoy - Pink Sweater",
       "productPrice": 55.0,
       "productImg": "./products/product08.jpg",
       "productTag": ""
     },
     {
-      "productID": 9,
+      "productID": 8,
       "productName": "Thunder Clap - Black T Shirt",
       "productPrice": 35.0,
       "productImg": "./products/product09.jpg",
       "productTag": ""
     },
     {
-      "productID": 10,
+      "productID": 9,
       "productName": "Forgot - White T Shirt",
       "productPrice": 25.0,
       "productImg": "./products/product10.jpg",
       "productTag": "On Sale"
     },
     {
-      "productID": 11,
+      "productID": 10,
       "productName": "Color Blind - Blue T Shirt",
       "productPrice": 40.0,
       "productImg": "./products/product11.jpg",
