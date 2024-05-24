@@ -35,12 +35,13 @@
   position: fixed;
   top: 1rem;
   left: 1rem;
+  z-index: 200;
 }
 .mobile > button {
   border: 2px solid var(--text-color);
   background: var(--highlight-blue);
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   box-shadow: 4px 4px var(--text-color);
 }
 .mobile > div {
@@ -67,6 +68,5 @@
   }
   .mobile {
     display: block;
-    z-index: 200;
   }
 }
