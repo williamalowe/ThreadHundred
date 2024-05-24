@@ -5,10 +5,10 @@
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #000;
   width: 100vw;
-  height: 1.5rem;
-  padding: 0.25rem;
+  padding: 1rem;
   overflow: hidden;
 }
 .message {
@@ -22,9 +22,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .announcement {
-    padding-bottom: 1rem;
-  }
   .message {
     font-size: 0.8rem;
   }
