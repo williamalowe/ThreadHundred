@@ -5,6 +5,17 @@ import { motion } from "framer-motion";
 import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../../views/App/App";
 
+const child = {
+  hidden: {
+    x: -20,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 const ProductListing = ({ name, price, img, tag }) => {
   const { addProduct, cart } = useContext(CartContext);
   const [isAdded, setIsAdded] = useState(false);
@@ -16,14 +27,15 @@ const ProductListing = ({ name, price, img, tag }) => {
         setIsAdded(true);
       }
     }
-  }
+  };
   useEffect(() => {
     inCart();
-  }, [cart])
+  }, [cart]);
 
   return (
     <motion.div
       className={styles.card}
+      variants={child}
       whileHover={{
         scale: 1.1,
       }}
