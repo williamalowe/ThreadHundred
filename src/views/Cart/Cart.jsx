@@ -3,12 +3,20 @@ import React, { useContext } from "react";
 import { CartContext } from "../App/App";
 import CartList from "../../components/CartList/CartList";
 import CheckoutForm from "../../components/CheckoutForm/CheckoutForm";
+import { motion } from "framer-motion";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
 
   return (
-    <div className={styles.cart}>
+    <motion.div
+      className={styles.cart}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 1,
+      }}
+    >
       <div className={styles.content}>
         <div className={styles.banner}>Your Cart</div>
         <div className={styles.products}>
@@ -21,7 +29,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

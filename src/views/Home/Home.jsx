@@ -1,18 +1,25 @@
-import HomeBanner from '../../components/HomeBanner/HomeBanner';
-import HomeCarousel from '../../components/HomeCarousel/HomeCarousel';
-import Reviews from '../../components/Reviews/Reviews';
-import Trending from '../../components/Trending/Trending';
-import styles from './Home.module.css';
+import HomeBanner from "../../components/HomeBanner/HomeBanner";
+import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
+import Reviews from "../../components/Reviews/Reviews";
+import Trending from "../../components/Trending/Trending";
+import styles from "./Home.module.css";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      {/* <HomeBanner /> */}
+    <motion.div
+      className={styles.home}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 1,
+      }}
+    >
       <HomeCarousel />
       <Trending />
       <Reviews />
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Home
+export default Home;

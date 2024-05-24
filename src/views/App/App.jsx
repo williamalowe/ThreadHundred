@@ -29,14 +29,14 @@ const App = () => {
   const removeProduct = (target) => {
     const updatedCart = cart.filter((item) => item.product !== target);
     setCart(updatedCart);
-  }
+  };
 
   return (
     <CartContext.Provider
       value={{
         cart,
         addProduct,
-        removeProduct
+        removeProduct,
       }}
     >
       <main className={styles.app}>
