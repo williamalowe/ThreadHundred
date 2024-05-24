@@ -26,6 +26,10 @@
 input, textarea {
   padding: 0.25rem;
   font-family: "Nunito", sans-serif;
+  border: 2px solid var(--text-color);
+}
+input::placeholder, textarea::placeholder {
+  text-transform: uppercase;
 }
 .checkbox {
   display: flex;
