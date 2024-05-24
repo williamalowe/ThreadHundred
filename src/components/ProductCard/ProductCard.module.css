@@ -40,3 +40,10 @@
   text-transform: uppercase;
   font-weight: 800;
 }
+
+@media screen and (max-width: 768px) {
+  .card, .card > img {
+    width: 240px;
+    height: 240px;
+  }
+}
