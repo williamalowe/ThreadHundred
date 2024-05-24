@@ -41,3 +41,32 @@
   bottom: 1%;
   right: 25%;
 }
+.mobile {
+  display: none;
+  position: relative;
+} 
+.mobile > a {
+  position: absolute;
+  z-index: 120;
+  bottom: 2rem;
+  left: 1rem;
+}
+.mobile > a > .mobile_button {
+  border: 2px solid var(--text-color);
+  background: var(--highlight-orange);
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 4px 4px var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100vw;
+    overflow: hidden;
+  }
+}

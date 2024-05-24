@@ -46,7 +46,7 @@ const App = () => {
         <Logo />
         <div className={styles.content}>
           <HomeBanner />
-          {/* <Outlet /> */}
+          <Outlet />
         </div>
       </main>
     </CartContext.Provider>

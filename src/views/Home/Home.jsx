@@ -16,8 +16,8 @@ const Home = () => {
       }}
     >
       <HomeCarousel />
-      <Trending />
-      <Reviews />
+      {/* <Trending /> */}
+      {/* <Reviews /> */}
     </motion.div>
   );
 };
